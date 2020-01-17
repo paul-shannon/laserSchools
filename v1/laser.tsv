@@ -1,0 +1,16 @@
+		
+WA OSPI	funds	WA LASER
+WA LASER	funds	North Sound LASER Alliance
+WA LASER	funds	South Sound LASER Alliance
+WA LASER	funds	Northwest LASER Alliance 
+WA LASER	funds	Olympic LASER Alliance 
+North Sound LASER Alliance	provide	assessment PD for district science leaders
+South Sound LASER Alliance	provide	assessment PD for district science leaders
+ESD 121 Puget Sound	provide	assessment PD for district science leaders
+assessment PD for district science leaders	given to	SD A
+assessment PD for district science leaders	given to	SD B
+assessment PD for district science leaders	given to	SD C
+Olympic LASER Alliance 	provide	curriculum PD for teachers
+curriculum PD for 9-12 teachers	given to	Port Angeles SD
+curriculum PD for 6-8 teachers	given to	Port Townsend SD
+curriculum PD for K-5 teachers	given to	Sequim SD
