@@ -7,9 +7,13 @@ styles <- c("",
 #----------------------------------------------------------------------------------------------------
 # create  data.frames for nodes, edges, and two simulated experimental variables, in 3 conditions
 #----------------------------------------------------------------------------------------------------
-tbl.edges <- read.table("tab3.tsv", sep="\t", as.is=TRUE)
+#tbl.edges <- read.table("tab3.tsv", sep="\t", as.is=TRUE)
 #tbl.edges <- read.table("laser.tsv", sep="\t", as.is=TRUE, skip=1)
+tbl.edges <- read.table("04mar2020.tsv", sep="\t", header=FALSE, as.is=TRUE, fill=TRUE)
 colnames(tbl.edges) <- c("source", "interaction", "target")
+dim(tbl.edges)
+tbl.edges <- subset(tbl.edges, nchar(target) > 0)
+dim(tbl.edges)
 graph.json <- dataFramesToJSON(tbl.edges)
 
 #----------------------------------------------------------------------------------------------------
