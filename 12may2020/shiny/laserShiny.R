@@ -47,6 +47,7 @@ ui = shinyUI(fluidPage(
         ),
      mainPanel(
          tabsetPanel(type="tabs", id="lcGenesTabs",
+            tabPanel("Intro", includeHTML("intro.html")),
             tabPanel(title="cytoscape", value="cytoscapeTab", cyjShinyOutput('cyjShiny')),
             tabPanel(title="3D (experimental)", value="threejsTab", scatterplotThreeOutput("graph3d"))
             ),
@@ -160,7 +161,7 @@ server = function(input, output, session) {
 
 } # server
 #----------------------------------------------------------------------------------------------------
-#runApp(shinyApp(ui=ui,server=server), port=6769)
-shinyApp(ui=ui, server=server)
+runApp(shinyApp(ui=ui,server=server), port=6769)
+#shinyApp(ui=ui, server=server)
 
 
